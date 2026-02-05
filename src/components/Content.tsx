@@ -6,9 +6,9 @@ import ParallaxBanner from "./ParallaxBanner";
 const Content: FC = () => {
     return <>
         <HeroPage />
-        <ParallaxBanner text="Three steps. A million possibilities." image="public\Banner.jpg" />
+        <ParallaxBanner text="Three steps. A million possibilities." image="Banner.jpg" />
         <StackedCards />
-        <ParallaxBanner text="Join us on a journey to excellence" buttonText='Get Started' image="public\Bulb.jpg" />
+        <ParallaxBanner text="Join us on a journey to excellence" buttonText='Get Started' image="Bulb.jpg" />
     </>
 };
 
