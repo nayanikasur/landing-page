@@ -16,13 +16,13 @@ const Footer = () => {
             <h1 className="text-3xl">Powered By <strong>IdeaTribe</strong></h1>
         </div>
 
-        <div className="w-full flex justify-between py-16 px-28">
+        <div className="w-full flex md:flex-row flex-col justify-between py-16 px-12 lg:px-28">
             <div>
                 <Logo />
             </div>
             <div className="flex flex-col space-y-2  text-[#979AA0]">
 
-                <h1 className="font-semibold text-white pb-4">QUICK NAVIGATION</h1>
+                <h1 className="font-semibold text-white md:pb-4 md:mt-0 mt-[25px]">QUICK NAVIGATION</h1>
                 <p>Home</p>
                 <p>About</p>
                 <p>Membership</p>
@@ -34,14 +34,14 @@ const Footer = () => {
             </div>
             <div className="flex flex-col space-y-2  text-[#979AA0]">
 
-                <h1 className="font-semibold text-white pb-4">STAY CONNECTED</h1>
+                <h1 className="font-semibold text-white md:pb-4 md:mt-0 mt-[25px]">STAY CONNECTED</h1>
                 <p className=" flex space-x-2"><Youtube /> <span>Youtube</span></p>
                 <p className="flex space-x-2"><Linkedin /> <span>Linkedin</span></p>
 
             </div>
             <div className="flex flex-col space-y-2  text-[#979AA0]">
 
-                <h1 className="font-semibold text-white pb-4">GET IN TOUCH</h1>
+                <h1 className="font-semibold text-white md:pb-4 md:mt-0 mt-[25px]">GET IN TOUCH</h1>
                 <p>team@gcaforum.com</p>
                 <p>Phone No. +91 8910392803</p>
 

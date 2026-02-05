@@ -30,14 +30,14 @@ const StackedCards: React.FC = () => {
     return (
         <section className="relative w-full bg-gradient-to-b
         from-[#000063]
-        to-[#000000] py-20">
+        to-[#000000] md:py-20 py-10">
 
             <div className="max-w-5xl mx-auto flex flex-col gap-32">
 
                 {cards.map((card, index) => (
                     <div
                         key={card.id}
-                        className="sticky top-20"
+                        className="sticky top-0 md:top-20"
                         style={{
                             zIndex: 10 + index,
                         }}
@@ -49,15 +49,19 @@ const StackedCards: React.FC = () => {
                 border
                 border-[#FFFFFF61]
                 rounded-3xl
-                p-10
+                p-5
+                md:p-10
                 shadow-2xl
                 flex
+                md:flex-row
+                flex-col
                 justify-between
+                items-center
                 text-white`}>
 
-                            <div className="w-[40%] flex flex-col space-y-2 justify-center items-center font-bold text-8xl">
-                                <div className="text-[156px] mb-[20px]">0{index + 1}</div>
-                                <p className="text-[84px]">{card.stepName}</p>
+                            <div className="md:w-[40%] flex md:flex-col space-y-2 justify-center items-center font-bold text-8xl md:mb-0 mb-5">
+                                <div className="text-[75px] md:text-[156px] md:mb-[20px] mb-0 mr-2 md:mr-0">0{index + 1}</div>
+                                <p className="text-[62px] md:text-[84px]">{card.stepName}</p>
                             </div>
                             <div className="w-[60%] ">
 

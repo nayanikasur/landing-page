@@ -17,17 +17,19 @@ const HeroPage: React.FC = () => {
         to-[#000063]
         rounded-b-[100px]
         gap-20
+        flex-col-reverse
+        md:flex-row
       "
             >
 
-                <div className="flex flex-col items-end gap-3">
+                <div className="flex flex-col items-center md:items-end gap-3">
 
-                    <div className="text-[90px] text-right font-[900] leading-none">
+                    <div className=" text-[50px] md:text-[90px] text-center md:text-right font-[900] leading-none">
                         <span className="text-[52px] font-[500]">Be</span> <br />
                         Skilltastic!
                     </div>
 
-                    <p className="text-right text-zinc-300">
+                    <p className="text-center md:text-right text-zinc-300 px-2 md:px-0">
                         BUILD, VALIDATE & STRENGTHEN YOUR CYBER SKILLS.
                         <br />
                         Open doors to resilient careers and future-ready opportunities.
@@ -37,7 +39,7 @@ const HeroPage: React.FC = () => {
 
 
 
-                <MainIllustration />
+                <MainIllustration className="w-[70vw] md:w-[30vw]" />
             </div >
         </div>
     );
